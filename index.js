@@ -16,6 +16,12 @@ app.post("/api/echo", (req, res) => {
   res.json({ you_sent: req.body });
 });
 
+// K-pop songs route
+const kpopData = require("./data/kpop.json");
+app.get("/api/kpop", (req, res) => {
+  res.json(kpopData);
+});
+
 // start server
 const PORT = 4000;
 app.listen(PORT, () => {

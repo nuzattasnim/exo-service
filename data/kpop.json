@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "title": "Dynamite",
+    "artist": "BTS",
+    "album": "BE",
+    "year": 2020
+  },
+  {
+    "id": 2,
+    "title": "Kill This Love",
+    "artist": "BLACKPINK",
+    "album": "Kill This Love",
+    "year": 2019
+  },
+  {
+    "id": 3,
+    "title": "God's Menu",
+    "artist": "Stray Kids",
+    "album": "GO LIVE",
+    "year": 2020
+  },
+  {
+    "id": 4,
+    "title": "Fancy",
+    "artist": "TWICE",
+    "album": "FANCY YOU",
+    "year": 2019
+  },
+  {
+    "id": 5,
+    "title": "Love Shot",
+    "artist": "EXO",
+    "album": "Love Shot",
+    "year": 2018
+  },
+  {
+    "id": 6,
+    "title": "Hype Boy",
+    "artist": "NewJeans",
+    "album": "New Jeans",
+    "year": 2022
+  },
+  {
+    "id": 7,
+    "title": "Next Level",
+    "artist": "aespa",
+    "album": "Next Level",
+    "year": 2021
+  }
+]
