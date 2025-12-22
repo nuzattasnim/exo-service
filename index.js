@@ -22,6 +22,25 @@ app.get("/api/kpop", (req, res) => {
   res.json(kpopData);
 });
 
+
+app.get("/stream", (req, res) => {
+  res.setHeader("Content-Type", "text/plain");
+  res.setHeader("Transfer-Encoding", "chunked");
+
+  let counter = 0;
+
+  const interval = setInterval(() => {
+    counter++;
+    res.write(`Chunk ${counter}\n`);
+  }, 100); // send data every 100ms
+
+  // Stop streaming when client disconnects
+  req.on("close", () => {
+    clearInterval(interval);
+    console.log("Client disconnected");
+  });
+});
+
 // start server
 const PORT = 4000;
 app.listen(PORT, () => {
