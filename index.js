@@ -8,7 +8,16 @@ app.use(cors());
 
 // simple API route
 app.get("/api/hello", (req, res) => {
-  res.json({ message: "Hello from Express API!" });
+  res.json({ 
+    message: "Hello from Express API!",
+    req: {
+      headers: req.headers,
+      method: req.method,
+      url: req.url,
+      query: req.query,
+      params: req.params
+    }
+  });
 });
 
 // optional: a POST example
